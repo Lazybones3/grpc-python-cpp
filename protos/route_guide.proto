@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package routeguide;
+
+service RouteGuide {
+  rpc RouteChat(stream RouteRequest) returns (stream RouteResponse) {}
+}
+
+message RouteRequest {
+  int32 id = 1;
+}
+
+message RouteResponse {
+  string message = 1;
+}
