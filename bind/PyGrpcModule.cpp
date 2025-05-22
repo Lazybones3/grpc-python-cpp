@@ -3,7 +3,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(PyClientModule, m) {
+PYBIND11_MODULE(PyGrpcModule, m) {
     py::class_<PyClient>(m, "PyClient")
             .def(py::init<std::string, int>())
             .def("read", &PyClient::read)

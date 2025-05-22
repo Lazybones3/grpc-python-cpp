@@ -1,6 +1,6 @@
 import sys
 sys.path.append("../cmake-build-debug/bind")
-from PyClientModule import PyClient, PyRequest
+from PyGrpcModule import PyClient, PyRequest
 
 client = PyClient("127.0.0.1", 50051)
 
